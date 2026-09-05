@@ -4,31 +4,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Política de Privacidad - PIXFLY</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            max-width: 850px;
-            margin: 0 auto;
-            padding: 30px 20px;
-            color: #222;
-            background: #f7f7f7;
-        }
 
 ```
+<title>PIXFLY - Privacy Policy</title>
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.7;
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 20px;
+        color: #222;
+        background: #f4f4f4;
+    }
+
     main {
-        background: white;
+        background: #ffffff;
         padding: 35px;
-        border-radius: 12px;
+        border-radius: 14px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.08);
     }
 
     h1 {
         margin-top: 0;
+        font-size: 32px;
     }
 
     h2 {
-        margin-top: 30px;
+        margin-top: 32px;
+        color: #333;
+    }
+
+    .subtitle {
+        color: #666;
+        margin-bottom: 25px;
+    }
+
+    .language-buttons {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 30px;
+        flex-wrap: wrap;
+    }
+
+    .language-buttons button {
+        padding: 10px 18px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        background: #fff;
+        cursor: pointer;
+        font-size: 15px;
+    }
+
+    .language-buttons button:hover {
+        background: #eee;
+    }
+
+    .language-buttons button.active {
+        background: #222;
+        color: #fff;
+        border-color: #222;
+    }
+
+    .language {
+        display: none;
+    }
+
+    .language.active {
+        display: block;
     }
 
     .date {
@@ -38,227 +86,757 @@
     a {
         color: #1769aa;
     }
+
+    footer {
+        margin-top: 40px;
+        padding-top: 20px;
+        border-top: 1px solid #ddd;
+        color: #666;
+        font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+        main {
+            padding: 22px;
+        }
+
+        h1 {
+            font-size: 26px;
+        }
+    }
 </style>
 ```
 
 </head>
 
 <body>
+
 <main>
 
-<h1>Política de Privacidad de PIXFLY</h1>
+```
+<div class="language-buttons">
+    <button id="btn-es" class="active" onclick="showLanguage('es')">
+        🇪🇸 Español
+    </button>
 
-<p class="date"><strong>Última actualización:</strong> 4 de septiembre de 2026</p>
+    <button id="btn-en" onclick="showLanguage('en')">
+        🇺🇸 English
+    </button>
 
-<p>
-Esta Política de Privacidad explica cómo PIXFLY recopila, utiliza y protege
-la información relacionada con los usuarios de la aplicación móvil PIXFLY.
-</p>
+    <button id="btn-fr" onclick="showLanguage('fr')">
+        🇫🇷 Français
+    </button>
+</div>
 
-<p>
-Al utilizar PIXFLY, aceptas las prácticas descritas en esta Política de Privacidad.
-</p>
 
-<h2>1. Información que recopilamos</h2>
+<!-- ==================== ESPAÑOL ==================== -->
 
-<p>
-PIXFLY puede recopilar y procesar determinada información necesaria para
-proporcionar las funciones del juego, guardar el progreso y mostrar publicidad.
-</p>
+<section id="es" class="language active" lang="es">
 
-<p>Dependiendo del uso de la aplicación, esta información puede incluir:</p>
+    <h1>Política de Privacidad de PIXFLY</h1>
 
-<ul>
-    <li>Un identificador de usuario generado mediante Firebase Authentication.</li>
-    <li>Información relacionada con el progreso del juego.</li>
-    <li>Inventario y cantidades de recursos del juego, como azúcar y otros objetos.</li>
-    <li>Niveles desbloqueados y niveles completados.</li>
-    <li>Información relacionada con compras dentro de la aplicación.</li>
-    <li>Información técnica y de diagnóstico necesaria para el funcionamiento de la aplicación.</li>
-    <li>Información utilizada por servicios de publicidad de terceros.</li>
-</ul>
+    <p class="date">
+        <strong>Última actualización:</strong> 4 de septiembre de 2026
+    </p>
 
-<h2>2. Firebase Authentication</h2>
+    <p>
+        Esta Política de Privacidad explica cómo PIXFLY recopila, utiliza
+        y protege la información relacionada con los usuarios de la
+        aplicación móvil PIXFLY.
+    </p>
 
-<p>
-PIXFLY utiliza Firebase Authentication para proporcionar una identificación
-de usuario. La aplicación puede utilizar autenticación anónima para asociar
-el progreso del jugador con una cuenta de usuario sin requerir que el jugador
-proporcione directamente su nombre, correo electrónico o contraseña.
-</p>
+    <p>
+        Al utilizar PIXFLY, aceptas las prácticas descritas en esta
+        Política de Privacidad.
+    </p>
 
-<p>
-Firebase puede procesar identificadores técnicos necesarios para proporcionar
-este servicio.
-</p>
+    <h2>1. Información que recopilamos</h2>
 
-<h2>3. Firebase Firestore</h2>
+    <p>
+        PIXFLY puede recopilar y procesar determinada información
+        necesaria para proporcionar las funciones del juego, guardar
+        el progreso y mostrar publicidad.
+    </p>
 
-<p>
-PIXFLY utiliza Firebase Cloud Firestore para almacenar información relacionada
-con el progreso del juego.
-</p>
+    <p>Dependiendo del uso de la aplicación, esta información puede incluir:</p>
 
-<p>Esta información puede incluir, entre otros:</p>
+    <ul>
+        <li>Un identificador de usuario generado mediante Firebase Authentication.</li>
+        <li>Información relacionada con el progreso del juego.</li>
+        <li>Inventario y cantidades de recursos del juego, como azúcar y otros objetos.</li>
+        <li>Niveles desbloqueados y niveles completados.</li>
+        <li>Información relacionada con compras dentro de la aplicación.</li>
+        <li>Información técnica y de diagnóstico necesaria para el funcionamiento de la aplicación.</li>
+        <li>Información utilizada por servicios de publicidad de terceros.</li>
+    </ul>
 
-<ul>
-    <li>Progreso y niveles desbloqueados.</li>
-    <li>Niveles completados.</li>
-    <li>Inventario del jugador.</li>
-    <li>Cantidad de azúcar.</li>
-    <li>Objetos y recursos obtenidos durante el juego.</li>
-    <li>Información necesaria para sincronizar el progreso entre sesiones.</li>
-</ul>
+    <h2>2. Firebase Authentication</h2>
 
-<p>
-La información almacenada en Firestore se utiliza para proporcionar y mantener
-las funciones del juego y sincronizar el progreso del jugador.
-</p>
+    <p>
+        PIXFLY utiliza Firebase Authentication para proporcionar una
+        identificación de usuario. La aplicación puede utilizar
+        autenticación anónima para asociar el progreso del jugador con
+        una cuenta de usuario sin requerir que el jugador proporcione
+        directamente su nombre, correo electrónico o contraseña.
+    </p>
 
-<h2>4. Publicidad</h2>
+    <p>
+        Firebase puede procesar identificadores técnicos necesarios
+        para proporcionar este servicio.
+    </p>
 
-<p>
-PIXFLY utiliza Google AdMob para mostrar anuncios dentro de la aplicación.
-AdMob puede recopilar y procesar información como identificadores del dispositivo,
-dirección IP, información relacionada con la interacción con anuncios,
-información de diagnóstico y otros datos necesarios para proporcionar,
-medir y proteger los servicios publicitarios.
-</p>
+    <h2>3. Firebase Firestore</h2>
 
-<p>
-La recopilación y el uso de esta información están sujetos también a las
-políticas de privacidad de Google.
-</p>
+    <p>
+        PIXFLY utiliza Firebase Cloud Firestore para almacenar información
+        relacionada con el progreso del juego.
+    </p>
 
-<h2>5. Anuncios recompensados</h2>
+    <p>Esta información puede incluir, entre otros:</p>
 
-<p>
-PIXFLY puede ofrecer anuncios recompensados. Estos anuncios permiten al jugador
-obtener recompensas dentro del juego después de completar correctamente la
-visualización de un anuncio.
-</p>
+    <ul>
+        <li>Progreso y niveles desbloqueados.</li>
+        <li>Niveles completados.</li>
+        <li>Inventario del jugador.</li>
+        <li>Cantidad de azúcar.</li>
+        <li>Objetos y recursos obtenidos durante el juego.</li>
+        <li>Información necesaria para sincronizar el progreso entre sesiones.</li>
+    </ul>
 
-<p>
-La visualización de anuncios recompensados es opcional y las recompensas se
-otorgan únicamente de acuerdo con las reglas del juego.
-</p>
+    <p>
+        La información almacenada en Firestore se utiliza para proporcionar
+        y mantener las funciones del juego y sincronizar el progreso del jugador.
+    </p>
 
-<h2>6. Compras dentro de la aplicación</h2>
+    <h2>4. Publicidad</h2>
 
-<p>
-PIXFLY puede ofrecer compras dentro de la aplicación mediante Google Play.
-Estas compras pueden permitir al jugador adquirir recursos virtuales del juego,
-como paquetes de azúcar.
-</p>
+    <p>
+        PIXFLY utiliza Google AdMob para mostrar anuncios dentro de la
+        aplicación. AdMob puede recopilar y procesar información como
+        identificadores del dispositivo, dirección IP, información
+        relacionada con la interacción con anuncios, información de
+        diagnóstico y otros datos necesarios para proporcionar, medir
+        y proteger los servicios publicitarios.
+    </p>
 
-<p>
-Los pagos son procesados por Google Play. PIXFLY no recibe ni almacena
-directamente los números completos de tarjetas de crédito, débito u otros
-datos completos de pago utilizados para realizar una compra.
-</p>
+    <p>
+        La recopilación y el uso de esta información también están sujetos
+        a las políticas de privacidad de Google.
+    </p>
 
-<p>
-La información relacionada con las compras puede utilizarse para verificar
-y proporcionar los artículos virtuales adquiridos.
-</p>
+    <h2>5. Anuncios recompensados</h2>
 
-<h2>7. Cómo utilizamos la información</h2>
+    <p>
+        PIXFLY puede ofrecer anuncios recompensados. Estos anuncios
+        permiten al jugador obtener recompensas dentro del juego después
+        de completar correctamente la visualización de un anuncio.
+    </p>
 
-<p>La información puede utilizarse para:</p>
+    <p>
+        La visualización de anuncios recompensados es opcional y las
+        recompensas se otorgan de acuerdo con las reglas del juego.
+    </p>
 
-<ul>
-    <li>Proporcionar las funciones de PIXFLY.</li>
-    <li>Guardar y sincronizar el progreso del jugador.</li>
-    <li>Administrar el inventario y los recursos del juego.</li>
-    <li>Procesar y verificar compras dentro de la aplicación.</li>
-    <li>Mostrar y medir publicidad.</li>
-    <li>Prevenir fraude, abuso y actividades no autorizadas.</li>
-    <li>Detectar y solucionar errores técnicos.</li>
-    <li>Mejorar el funcionamiento y la experiencia del juego.</li>
-</ul>
+    <h2>6. Compras dentro de la aplicación</h2>
 
-<h2>8. Servicios de terceros</h2>
+    <p>
+        PIXFLY puede ofrecer compras dentro de la aplicación mediante
+        Google Play. Estas compras pueden permitir al jugador adquirir
+        recursos virtuales del juego, como paquetes de azúcar.
+    </p>
 
-<p>
-PIXFLY utiliza servicios proporcionados por terceros para determinadas
-funciones de la aplicación, incluyendo:
-</p>
+    <p>
+        Los pagos son procesados por Google Play. PIXFLY no recibe ni
+        almacena directamente los números completos de tarjetas de crédito,
+        débito u otros datos completos de pago utilizados para realizar
+        una compra.
+    </p>
 
-<ul>
-    <li>Google Firebase Authentication</li>
-    <li>Google Firebase Cloud Firestore</li>
-    <li>Google AdMob</li>
-    <li>Google Play</li>
-</ul>
+    <p>
+        La información relacionada con las compras puede utilizarse para
+        verificar y proporcionar los artículos virtuales adquiridos.
+    </p>
 
-<p>
-Estos servicios pueden recopilar o procesar información de acuerdo con sus
-propias políticas de privacidad y términos de servicio.
-</p>
+    <h2>7. Cómo utilizamos la información</h2>
 
-<h2>9. Seguridad</h2>
+    <p>La información puede utilizarse para:</p>
 
-<p>
-Tomamos medidas razonables para proteger la información procesada por PIXFLY.
-Sin embargo, ningún método de almacenamiento o transmisión de información
-por Internet puede garantizar una seguridad absoluta.
-</p>
+    <ul>
+        <li>Proporcionar las funciones de PIXFLY.</li>
+        <li>Guardar y sincronizar el progreso del jugador.</li>
+        <li>Administrar el inventario y los recursos del juego.</li>
+        <li>Procesar y verificar compras dentro de la aplicación.</li>
+        <li>Mostrar y medir publicidad.</li>
+        <li>Prevenir fraude, abuso y actividades no autorizadas.</li>
+        <li>Detectar y solucionar errores técnicos.</li>
+        <li>Mejorar el funcionamiento y la experiencia del juego.</li>
+    </ul>
 
-<h2>10. Eliminación de datos</h2>
+    <h2>8. Servicios de terceros</h2>
 
-<p>
-Si deseas solicitar la eliminación de los datos asociados con tu uso de PIXFLY,
-puedes comunicarte con nosotros mediante el correo electrónico indicado en
-la sección de contacto.
-</p>
+    <p>
+        PIXFLY utiliza servicios proporcionados por terceros para
+        determinadas funciones de la aplicación, incluyendo:
+    </p>
 
-<p>
-Las solicitudes de eliminación serán revisadas y procesadas de acuerdo con
-las obligaciones legales aplicables y las limitaciones técnicas de los
-servicios utilizados por la aplicación.
-</p>
+    <ul>
+        <li>Google Firebase Authentication</li>
+        <li>Google Firebase Cloud Firestore</li>
+        <li>Google AdMob</li>
+        <li>Google Play</li>
+    </ul>
 
-<h2>11. Privacidad de los menores</h2>
+    <p>
+        Estos servicios pueden recopilar o procesar información de acuerdo
+        con sus propias políticas de privacidad y términos de servicio.
+    </p>
 
-<p>
-PIXFLY no está diseñado para recopilar deliberadamente información personal
-de niños de forma directa.
-</p>
+    <h2>9. Seguridad</h2>
 
-<p>
-Los servicios de terceros utilizados por PIXFLY, incluyendo Google AdMob,
-pueden aplicar sus propias medidas y restricciones relacionadas con la
-publicidad y la protección de menores.
-</p>
+    <p>
+        Tomamos medidas razonables para proteger la información procesada
+        por PIXFLY. Sin embargo, ningún método de almacenamiento o
+        transmisión de información por Internet puede garantizar una
+        seguridad absoluta.
+    </p>
 
-<h2>12. Cambios a esta Política de Privacidad</h2>
+    <h2>10. Eliminación de datos</h2>
 
-<p>
-Podemos actualizar esta Política de Privacidad cuando sea necesario para
-reflejar cambios en PIXFLY, en los servicios utilizados o en los requisitos
-legales aplicables.
-</p>
+    <p>
+        Si deseas solicitar la eliminación de los datos asociados con tu
+        uso de PIXFLY, puedes comunicarte con nosotros mediante el correo
+        electrónico indicado en la sección de contacto.
+    </p>
 
-<p>
-Cuando se realicen cambios, se actualizará la fecha indicada al comienzo
-de esta política.
-</p>
+    <p>
+        Las solicitudes de eliminación serán revisadas y procesadas de
+        acuerdo con las obligaciones legales aplicables y las limitaciones
+        técnicas de los servicios utilizados por la aplicación.
+    </p>
 
-<h2>13. Contacto</h2>
+    <h2>11. Privacidad de los menores</h2>
 
-<p>
-Si tienes preguntas, comentarios o solicitudes relacionadas con esta
-Política de Privacidad o con el tratamiento de datos en PIXFLY, puedes
-contactarnos en:
-</p>
+    <p>
+        PIXFLY no está diseñado para recopilar deliberadamente información
+        personal de niños de forma directa.
+    </p>
 
-<p>
-<strong>Correo electrónico:</strong>
-<a href="mailto:pixfly.game.contac@gmail.com">
-pixfly.game.contac@gmail.com
-</a>
-</p>
+    <p>
+        Los servicios de terceros utilizados por PIXFLY, incluyendo Google
+        AdMob, pueden aplicar sus propias medidas y restricciones relacionadas
+        con la publicidad y la protección de menores.
+    </p>
+
+    <h2>12. Cambios a esta Política de Privacidad</h2>
+
+    <p>
+        Podemos actualizar esta Política de Privacidad cuando sea necesario
+        para reflejar cambios en PIXFLY, en los servicios utilizados o en
+        los requisitos legales aplicables.
+    </p>
+
+    <p>
+        Cuando se realicen cambios, se actualizará la fecha indicada al
+        comienzo de esta política.
+    </p>
+
+    <h2>13. Contacto</h2>
+
+    <p>
+        Si tienes preguntas, comentarios o solicitudes relacionadas con
+        esta Política de Privacidad o con el tratamiento de datos en PIXFLY,
+        puedes contactarnos en:
+    </p>
+
+    <p>
+        <strong>Correo electrónico:</strong>
+        <a href="mailto:pixfly.game.contact@gmail.com">
+            pixfly.game.contact@gmail.com
+        </a>
+    </p>
+
+</section>
+
+
+<!-- ==================== ENGLISH ==================== -->
+
+<section id="en" class="language" lang="en">
+
+    <h1>PIXFLY Privacy Policy</h1>
+
+    <p class="date">
+        <strong>Last updated:</strong> September 4, 2026
+    </p>
+
+    <p>
+        This Privacy Policy explains how PIXFLY collects, uses, and
+        protects information related to users of the PIXFLY mobile application.
+    </p>
+
+    <p>
+        By using PIXFLY, you agree to the practices described in this
+        Privacy Policy.
+    </p>
+
+    <h2>1. Information We Collect</h2>
+
+    <p>
+        PIXFLY may collect and process certain information necessary
+        to provide game features, save player progress, and display advertising.
+    </p>
+
+    <p>This information may include:</p>
+
+    <ul>
+        <li>A user identifier generated through Firebase Authentication.</li>
+        <li>Information related to game progress.</li>
+        <li>Game inventory and virtual resources, such as sugar and other items.</li>
+        <li>Unlocked and completed levels.</li>
+        <li>Information related to in-app purchases.</li>
+        <li>Technical and diagnostic information necessary for the application to function.</li>
+        <li>Information used by third-party advertising services.</li>
+    </ul>
+
+    <h2>2. Firebase Authentication</h2>
+
+    <p>
+        PIXFLY uses Firebase Authentication to provide a user identifier.
+        The application may use anonymous authentication to associate a
+        player's progress with a user account without requiring the player
+        to directly provide their name, email address, or password.
+    </p>
+
+    <p>
+        Firebase may process technical identifiers necessary to provide
+        this service.
+    </p>
+
+    <h2>3. Firebase Firestore</h2>
+
+    <p>
+        PIXFLY uses Firebase Cloud Firestore to store information related
+        to game progress.
+    </p>
+
+    <p>This information may include:</p>
+
+    <ul>
+        <li>Game progress and unlocked levels.</li>
+        <li>Completed levels.</li>
+        <li>Player inventory.</li>
+        <li>Sugar balance.</li>
+        <li>Items and resources obtained during gameplay.</li>
+        <li>Information necessary to synchronize progress between sessions.</li>
+    </ul>
+
+    <p>
+        Information stored in Firestore is used to provide and maintain
+        game features and synchronize player progress.
+    </p>
+
+    <h2>4. Advertising</h2>
+
+    <p>
+        PIXFLY uses Google AdMob to display advertisements within the
+        application. AdMob may collect and process information such as
+        device identifiers, IP address, information related to ad
+        interactions, diagnostic information, and other data necessary
+        to provide, measure, and protect advertising services.
+    </p>
+
+    <p>
+        The collection and use of this information are also subject to
+        Google's privacy policies.
+    </p>
+
+    <h2>5. Rewarded Advertisements</h2>
+
+    <p>
+        PIXFLY may offer rewarded advertisements. These advertisements
+        allow players to receive in-game rewards after successfully
+        completing an advertisement.
+    </p>
+
+    <p>
+        Viewing rewarded advertisements is optional, and rewards are
+        provided according to the game's rules.
+    </p>
+
+    <h2>6. In-App Purchases</h2>
+
+    <p>
+        PIXFLY may offer in-app purchases through Google Play. These
+        purchases may allow players to acquire virtual game resources,
+        such as sugar packages.
+    </p>
+
+    <p>
+        Payments are processed by Google Play. PIXFLY does not directly
+        receive or store complete credit card, debit card, or other full
+        payment information used to make purchases.
+    </p>
+
+    <p>
+        Purchase-related information may be used to verify and provide
+        purchased virtual items.
+    </p>
+
+    <h2>7. How We Use Information</h2>
+
+    <p>Information may be used to:</p>
+
+    <ul>
+        <li>Provide PIXFLY's features.</li>
+        <li>Save and synchronize player progress.</li>
+        <li>Manage player inventory and game resources.</li>
+        <li>Process and verify in-app purchases.</li>
+        <li>Display and measure advertising.</li>
+        <li>Prevent fraud, abuse, and unauthorized activity.</li>
+        <li>Detect and resolve technical problems.</li>
+        <li>Improve the game and user experience.</li>
+    </ul>
+
+    <h2>8. Third-Party Services</h2>
+
+    <p>
+        PIXFLY uses third-party services for certain application features,
+        including:
+    </p>
+
+    <ul>
+        <li>Google Firebase Authentication</li>
+        <li>Google Firebase Cloud Firestore</li>
+        <li>Google AdMob</li>
+        <li>Google Play</li>
+    </ul>
+
+    <p>
+        These services may collect or process information according to
+        their own privacy policies and terms of service.
+    </p>
+
+    <h2>9. Security</h2>
+
+    <p>
+        We take reasonable measures to protect information processed by
+        PIXFLY. However, no method of storage or transmission over the
+        Internet can guarantee absolute security.
+    </p>
+
+    <h2>10. Data Deletion</h2>
+
+    <p>
+        If you would like to request deletion of data associated with
+        your use of PIXFLY, you may contact us using the email address
+        provided in the Contact section.
+    </p>
+
+    <p>
+        Requests will be reviewed and processed in accordance with
+        applicable legal requirements and the technical limitations of
+        the services used by the application.
+    </p>
+
+    <h2>11. Children's Privacy</h2>
+
+    <p>
+        PIXFLY is not designed to deliberately collect personal
+        information directly from children.
+    </p>
+
+    <p>
+        Third-party services used by PIXFLY, including Google AdMob,
+        may apply their own measures and restrictions regarding
+        advertising and children's privacy.
+    </p>
+
+    <h2>12. Changes to This Privacy Policy</h2>
+
+    <p>
+        We may update this Privacy Policy when necessary to reflect
+        changes to PIXFLY, the services we use, or applicable legal
+        requirements.
+    </p>
+
+    <p>
+        When changes are made, the date at the beginning of this policy
+        will be updated.
+    </p>
+
+    <h2>13. Contact</h2>
+
+    <p>
+        If you have questions, comments, or requests regarding this
+        Privacy Policy or data processing in PIXFLY, you can contact us at:
+    </p>
+
+    <p>
+        <strong>Email:</strong>
+        <a href="mailto:pixfly.game.contact@gmail.com">
+            pixfly.game.contact@gmail.com
+        </a>
+    </p>
+
+</section>
+
+
+<!-- ==================== FRANÇAIS ==================== -->
+
+<section id="fr" class="language" lang="fr">
+
+    <h1>Politique de confidentialité de PIXFLY</h1>
+
+    <p class="date">
+        <strong>Dernière mise à jour :</strong> 4 septembre 2026
+    </p>
+
+    <p>
+        Cette Politique de confidentialité explique comment PIXFLY
+        collecte, utilise et protège les informations relatives aux
+        utilisateurs de l'application mobile PIXFLY.
+    </p>
+
+    <p>
+        En utilisant PIXFLY, vous acceptez les pratiques décrites dans
+        cette Politique de confidentialité.
+    </p>
+
+    <h2>1. Informations que nous collectons</h2>
+
+    <p>
+        PIXFLY peut collecter et traiter certaines informations nécessaires
+        pour fournir les fonctionnalités du jeu, sauvegarder la progression
+        du joueur et afficher des publicités.
+    </p>
+
+    <p>Ces informations peuvent notamment comprendre :</p>
+
+    <ul>
+        <li>Un identifiant utilisateur généré par Firebase Authentication.</li>
+        <li>Des informations relatives à la progression dans le jeu.</li>
+        <li>L'inventaire et les ressources virtuelles du jeu, comme le sucre et d'autres objets.</li>
+        <li>Les niveaux débloqués et terminés.</li>
+        <li>Les informations relatives aux achats intégrés.</li>
+        <li>Les informations techniques et de diagnostic nécessaires au fonctionnement de l'application.</li>
+        <li>Les informations utilisées par les services publicitaires tiers.</li>
+    </ul>
+
+    <h2>2. Firebase Authentication</h2>
+
+    <p>
+        PIXFLY utilise Firebase Authentication afin de fournir un
+        identifiant utilisateur. L'application peut utiliser
+        l'authentification anonyme pour associer la progression d'un
+        joueur à un compte utilisateur sans demander directement son
+        nom, son adresse e-mail ou son mot de passe.
+    </p>
+
+    <p>
+        Firebase peut traiter les identifiants techniques nécessaires
+        à la fourniture de ce service.
+    </p>
+
+    <h2>3. Firebase Firestore</h2>
+
+    <p>
+        PIXFLY utilise Firebase Cloud Firestore pour stocker les
+        informations relatives à la progression dans le jeu.
+    </p>
+
+    <p>Ces informations peuvent notamment comprendre :</p>
+
+    <ul>
+        <li>La progression et les niveaux débloqués.</li>
+        <li>Les niveaux terminés.</li>
+        <li>L'inventaire du joueur.</li>
+        <li>La quantité de sucre.</li>
+        <li>Les objets et ressources obtenus pendant le jeu.</li>
+        <li>Les informations nécessaires à la synchronisation de la progression entre les sessions.</li>
+    </ul>
+
+    <p>
+        Les informations stockées dans Firestore sont utilisées pour
+        fournir et maintenir les fonctionnalités du jeu et synchroniser
+        la progression du joueur.
+    </p>
+
+    <h2>4. Publicité</h2>
+
+    <p>
+        PIXFLY utilise Google AdMob pour afficher des publicités dans
+        l'application. AdMob peut collecter et traiter des informations
+        telles que les identifiants de l'appareil, l'adresse IP, les
+        informations relatives aux interactions avec les publicités,
+        les informations de diagnostic et d'autres données nécessaires
+        à la fourniture, à la mesure et à la protection des services
+        publicitaires.
+    </p>
+
+    <p>
+        La collecte et l'utilisation de ces informations sont également
+        soumises aux politiques de confidentialité de Google.
+    </p>
+
+    <h2>5. Publicités récompensées</h2>
+
+    <p>
+        PIXFLY peut proposer des publicités récompensées. Ces publicités
+        permettent aux joueurs de recevoir des récompenses dans le jeu
+        après avoir regardé une publicité jusqu'à son terme.
+    </p>
+
+    <p>
+        Le visionnage des publicités récompensées est facultatif et les
+        récompenses sont accordées conformément aux règles du jeu.
+    </p>
+
+    <h2>6. Achats intégrés</h2>
+
+    <p>
+        PIXFLY peut proposer des achats intégrés via Google Play. Ces
+        achats peuvent permettre aux joueurs d'acquérir des ressources
+        virtuelles du jeu, telles que des packs de sucre.
+    </p>
+
+    <p>
+        Les paiements sont traités par Google Play. PIXFLY ne reçoit ni
+        ne stocke directement les numéros complets de cartes de crédit,
+        de débit ou d'autres informations de paiement complètes utilisées
+        pour effectuer un achat.
+    </p>
+
+    <p>
+        Les informations relatives aux achats peuvent être utilisées pour
+        vérifier et fournir les articles virtuels achetés.
+    </p>
+
+    <h2>7. Utilisation des informations</h2>
+
+    <p>Les informations peuvent être utilisées pour :</p>
+
+    <ul>
+        <li>Fournir les fonctionnalités de PIXFLY.</li>
+        <li>Sauvegarder et synchroniser la progression du joueur.</li>
+        <li>Gérer l'inventaire et les ressources du jeu.</li>
+        <li>Traiter et vérifier les achats intégrés.</li>
+        <li>Afficher et mesurer les publicités.</li>
+        <li>Prévenir la fraude, les abus et les activités non autorisées.</li>
+        <li>Détecter et résoudre les problèmes techniques.</li>
+        <li>Améliorer le jeu et l'expérience utilisateur.</li>
+    </ul>
+
+    <h2>8. Services tiers</h2>
+
+    <p>
+        PIXFLY utilise des services tiers pour certaines fonctionnalités
+        de l'application, notamment :
+    </p>
+
+    <ul>
+        <li>Google Firebase Authentication</li>
+        <li>Google Firebase Cloud Firestore</li>
+        <li>Google AdMob</li>
+        <li>Google Play</li>
+    </ul>
+
+    <p>
+        Ces services peuvent collecter ou traiter des informations
+        conformément à leurs propres politiques de confidentialité
+        et conditions d'utilisation.
+    </p>
+
+    <h2>9. Sécurité</h2>
+
+    <p>
+        Nous prenons des mesures raisonnables pour protéger les
+        informations traitées par PIXFLY. Cependant, aucune méthode
+        de stockage ou de transmission sur Internet ne peut garantir
+        une sécurité absolue.
+    </p>
+
+    <h2>10. Suppression des données</h2>
+
+    <p>
+        Si vous souhaitez demander la suppression des données associées
+        à votre utilisation de PIXFLY, vous pouvez nous contacter à
+        l'adresse e-mail indiquée dans la section Contact.
+    </p>
+
+    <p>
+        Les demandes seront examinées et traitées conformément aux
+        obligations légales applicables et aux limitations techniques
+        des services utilisés par l'application.
+    </p>
+
+    <h2>11. Confidentialité des enfants</h2>
+
+    <p>
+        PIXFLY n'est pas conçu pour collecter délibérément des
+        informations personnelles directement auprès des enfants.
+    </p>
+
+    <p>
+        Les services tiers utilisés par PIXFLY, notamment Google AdMob,
+        peuvent appliquer leurs propres mesures et restrictions concernant
+        la publicité et la protection des enfants.
+    </p>
+
+    <h2>12. Modifications de cette Politique de confidentialité</h2>
+
+    <p>
+        Nous pouvons mettre à jour cette Politique de confidentialité
+        lorsque cela est nécessaire afin de refléter les changements
+        apportés à PIXFLY, aux services utilisés ou aux exigences
+        légales applicables.
+    </p>
+
+    <p>
+        En cas de modification, la date indiquée au début de cette
+        politique sera mise à jour.
+    </p>
+
+    <h2>13. Contact</h2>
+
+    <p>
+        Pour toute question, tout commentaire ou toute demande concernant
+        cette Politique de confidentialité ou le traitement des données
+        dans PIXFLY, vous pouvez nous contacter à :
+    </p>
+
+    <p>
+        <strong>E-mail :</strong>
+        <a href="mailto:pixfly.game.contact@gmail.com">
+            pixfly.game.contact@gmail.com
+        </a>
+    </p>
+
+</section>
+
+
+<footer>
+    PIXFLY — Privacy Policy
+</footer>
+```
 
 </main>
+
+<script>
+    function showLanguage(language) {
+
+        document.querySelectorAll('.language').forEach(function(section) {
+            section.classList.remove('active');
+        });
+
+        document.querySelectorAll('.language-buttons button').forEach(function(button) {
+            button.classList.remove('active');
+        });
+
+        document.getElementById(language).classList.add('active');
+        document.getElementById('btn-' + language).classList.add('active');
+
+        document.documentElement.lang = language;
+    }
+</script>
+
 </body>
 </html>
